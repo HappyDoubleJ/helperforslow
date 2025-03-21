@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:h2:tcp://localhost/~/easyarticle
     username: sa
-    password: 0000
+    password: "0000"
     driver-class-name: org.h2.Driver
 
   jpa:
@@ -15,3 +15,6 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
 logging.level:
   org.hibernate.SQL: debug
+openai:
+  model: "gpt-4"
+  secret-key: ${OPENAI_SECRET_KEY}
